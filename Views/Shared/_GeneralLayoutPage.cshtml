@@ -557,7 +557,7 @@
         fetch(checkAliveUrl, { method: 'GET', cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('Server error');
-                console.log(response);
+               
                 return response.json();
             })
             .then(data => {
