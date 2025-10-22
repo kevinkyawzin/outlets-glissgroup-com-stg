@@ -161,9 +161,9 @@
                 <div class="nav-no-collapse header-nav">
                     <ul class="nav pull-right">
                         <li class="dropdown hidden-xs">
-                          
+
                         </li>
-                    
+
                         <!-- start: User Dropdown -->
                         <li class="dropdown">
                             <a class="btn dropdown-toggle" data-toggle="dropdown" href="index.html#" style="min-width:191px;">
@@ -179,19 +179,19 @@
                                     }
                                     else
                                     {
-                                        Response.RedirectToRoute(new { controller = "Access", action = "Login" }); 
+                                        Response.RedirectToRoute(new { controller = "Access", action = "Login" });
                                     }
                                 }
                                 else
                                 {
                                     Response.RedirectToRoute(new { controller = "Access", action = "Login" });
                                 }
-                             
+
                                 <span class="caret"></span>
 
                             </a>
                             <ul class="dropdown-menu">
-                             
+
                                 <li><a href="~/Access/ChangePassword"><i class="fa fa-unlock-alt"></i> Change Password</a></li>
                                 <li><a href="~/Access/Logout"><i class="halflings off white"></i> Logout</a></li>
                             </ul>
@@ -266,7 +266,7 @@
                             <ul>
                                 <li><a class="submenu" href="~/Report/ReportGroupSummary"><i class="fa fa-group"></i><span class="hidden-sm">Group Summary</span></a></li>
                             </ul>
-                        </li>  
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -283,166 +283,166 @@
             <!-- start: Widgets Area -->
             @*<div id="widgets-area" class="col-sm-2">
 
-                <ul class="nav tab-menu nav-tabs" id="myTab">
-                    <li class="active"><a href="index.html#charts"><i class="fa fa-bar-chart-o"></i></a></li>
-                    <li><a href="index.html#users"><i class="fa fa-group"></i></a></li>
-                    <li><a href="index.html#messages"><i class="fa fa-envelope"></i></a></li>
-                    <li><a id="close-widgets-area" href="index.html#"><i class="fa fa-sign-in"></i></a></li>
-                </ul>
+                    <ul class="nav tab-menu nav-tabs" id="myTab">
+                        <li class="active"><a href="index.html#charts"><i class="fa fa-bar-chart-o"></i></a></li>
+                        <li><a href="index.html#users"><i class="fa fa-group"></i></a></li>
+                        <li><a href="index.html#messages"><i class="fa fa-envelope"></i></a></li>
+                        <li><a id="close-widgets-area" href="index.html#"><i class="fa fa-sign-in"></i></a></li>
+                    </ul>
 
-                <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane active" id="charts">
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane active" id="charts">
 
-                        <div class="bar-stat">
-                            <span class="title">Account balance</span>
-                            <span class="value">$19 999,99</span>
-                            <span class="chart green">7,3,2,6,6,3,9,0,1,4</span>
+                            <div class="bar-stat">
+                                <span class="title">Account balance</span>
+                                <span class="value">$19 999,99</span>
+                                <span class="chart green">7,3,2,6,6,3,9,0,1,4</span>
+                            </div>
+                            <hr>
+                            <div class="bar-stat">
+                                <span class="title">Clients</span>
+                                <span class="value">1278</span>
+                                <span class="chart yellow">8,2,5,4,7,4,7,2,5,9</span>
+                            </div>
+                            <hr>
+                            <div class="bar-stat">
+                                <span class="title">Orders</span>
+                                <span class="value">5876</span>
+                                <span class="chart blue">2,4,6,8,3,5,9,3,2,2</span>
+                            </div>
+                            <hr>
+                            <div class="bar-stat">
+                                <span class="title">Messages</span>
+                                <span class="value">673</span>
+                                <span class="chart red">0,3,3,8,3,3,2,7,8,4</span>
+                            </div>
+
+                            <hr>
+
+                            <div id="cpu-usage"></div>
+
+                            <ul class="progress-bars">
+
+                                <li>
+                                    <span class="title">Free Memory</span>
+                                    <span class="percent"></span>
+                                    <div class="taskProgress progressSlim progressGreen">80</div>
+                                </li>
+
+                                <li>
+                                    <span class="title">Free HDD Drive</span>
+                                    <span class="percent"></span>
+                                    <div class="taskProgress progressSlim progressYellow">20</div>
+                                </li>
+
+                                <li>
+                                    <span class="title">Free SSD Drive</span>
+                                    <span class="percent"></span>
+                                    <div class="taskProgress progressSlim progressBlue">57</div>
+                                </li>
+
+                                <li>
+                                    <span class="title">Transfer</span>
+                                    <span class="percent"></span>
+                                    <div class="taskProgress progressSlim progressRed">45</div>
+                                </li>
+
+                            </ul>
                         </div>
-                        <hr>
-                        <div class="bar-stat">
-                            <span class="title">Clients</span>
-                            <span class="value">1278</span>
-                            <span class="chart yellow">8,2,5,4,7,4,7,2,5,9</span>
+                        <div class="tab-pane" id="users">
+
+                            <ul class="users-list">
+                                <li>
+                                    <a href="index.html#">
+                                        <span class="status active"></span>
+                                        <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar.jpg")" alt="Avatar"></span>
+                                        <span class="name">Łukasz Holeczek</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">
+                                        <span class="status busy"></span>
+                                        <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar2.jpg")" alt="Avatar"></span>
+                                        <span class="name">Megan Abott</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">
+                                        <span class="status disable"></span>
+                                        <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar3.jpg")" alt="Avatar"></span>
+                                        <span class="name">Kate Ross</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">
+                                        <span class="status active"></span>
+                                        <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar4.jpg")" alt="Avatar"></span>
+                                        <span class="name">Julie Blank</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">
+                                        <span class="status"></span>
+                                        <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar5.jpg")" alt="Avatar"></span>
+                                        <span class="name">Jane Sanders</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">View all users</a>
+                                </li>
+                            </ul>
                         </div>
-                        <hr>
-                        <div class="bar-stat">
-                            <span class="title">Orders</span>
-                            <span class="value">5876</span>
-                            <span class="chart blue">2,4,6,8,3,5,9,3,2,2</span>
+                        <div class="tab-pane" id="messages">
+
+                            <ul class="messages-list">
+                                <li>
+                                    <a href="index.html#">
+                                        <div class="avatar"><img class="img-circle" src="" @Url.Content("~/assets/img/avatar.jpg") " alt=" avatar"></div>
+                                        <span class="name">Łukasz Holeczek</span>
+                                        <span class="date">25/6/2013</span>
+                                        <span class="title">Custom Bootstrap design for new client</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">
+                                        <div class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar2.jpg")" alt="Avatar"></div>
+                                        <span class="name">Megan Abott</span>
+                                        <span class="date">25/6/2013</span>
+                                        <span class="title">Custom Bootstrap design for new client</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">
+                                        <div class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar3.jpg")" alt="Avatar"></div>
+                                        <span class="name">Kate Ross</span>
+                                        <span class="date">25/6/2013</span>
+                                        <span class="title">Custom Bootstrap design for new client</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">
+                                        <div class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar4.jpg")" alt="Avatar"></div>
+                                        <span class="name">Julie Blank</span>
+                                        <span class="date">25/6/2013</span>
+                                        <span class="title">Custom Bootstrap design for new client</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">
+                                        <div class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar5.jpg")" alt="Avatar"></div>
+                                        <span class="name">Jane Sanders</span>
+                                        <span class="date">25/6/2013</span>
+                                        <span class="title">Custom Bootstrap design for new client</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">View all messages</a>
+                                </li>
+                            </ul>
                         </div>
-                        <hr>
-                        <div class="bar-stat">
-                            <span class="title">Messages</span>
-                            <span class="value">673</span>
-                            <span class="chart red">0,3,3,8,3,3,2,7,8,4</span>
-                        </div>
-
-                        <hr>
-
-                        <div id="cpu-usage"></div>
-
-                        <ul class="progress-bars">
-
-                            <li>
-                                <span class="title">Free Memory</span>
-                                <span class="percent"></span>
-                                <div class="taskProgress progressSlim progressGreen">80</div>
-                            </li>
-
-                            <li>
-                                <span class="title">Free HDD Drive</span>
-                                <span class="percent"></span>
-                                <div class="taskProgress progressSlim progressYellow">20</div>
-                            </li>
-
-                            <li>
-                                <span class="title">Free SSD Drive</span>
-                                <span class="percent"></span>
-                                <div class="taskProgress progressSlim progressBlue">57</div>
-                            </li>
-
-                            <li>
-                                <span class="title">Transfer</span>
-                                <span class="percent"></span>
-                                <div class="taskProgress progressSlim progressRed">45</div>
-                            </li>
-
-                        </ul>
                     </div>
-                    <div class="tab-pane" id="users">
 
-                        <ul class="users-list">
-                            <li>
-                                <a href="index.html#">
-                                    <span class="status active"></span>
-                                    <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar.jpg")" alt="Avatar"></span>
-                                    <span class="name">Łukasz Holeczek</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="status busy"></span>
-                                    <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar2.jpg")" alt="Avatar"></span>
-                                    <span class="name">Megan Abott</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="status disable"></span>
-                                    <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar3.jpg")" alt="Avatar"></span>
-                                    <span class="name">Kate Ross</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="status active"></span>
-                                    <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar4.jpg")" alt="Avatar"></span>
-                                    <span class="name">Julie Blank</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <span class="status"></span>
-                                    <span class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar5.jpg")" alt="Avatar"></span>
-                                    <span class="name">Jane Sanders</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">View all users</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane" id="messages">
-
-                        <ul class="messages-list">
-                            <li>
-                                <a href="index.html#">
-                                    <div class="avatar"><img class="img-circle" src="" @Url.Content("~/assets/img/avatar.jpg") " alt=" avatar"></div>
-                                    <span class="name">Łukasz Holeczek</span>
-                                    <span class="date">25/6/2013</span>
-                                    <span class="title">Custom Bootstrap design for new client</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar2.jpg")" alt="Avatar"></div>
-                                    <span class="name">Megan Abott</span>
-                                    <span class="date">25/6/2013</span>
-                                    <span class="title">Custom Bootstrap design for new client</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar3.jpg")" alt="Avatar"></div>
-                                    <span class="name">Kate Ross</span>
-                                    <span class="date">25/6/2013</span>
-                                    <span class="title">Custom Bootstrap design for new client</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar4.jpg")" alt="Avatar"></div>
-                                    <span class="name">Julie Blank</span>
-                                    <span class="date">25/6/2013</span>
-                                    <span class="title">Custom Bootstrap design for new client</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">
-                                    <div class="avatar"><img class="img-circle" src="@Url.Content("~/assets/img/avatar5.jpg")" alt="Avatar"></div>
-                                    <span class="name">Jane Sanders</span>
-                                    <span class="date">25/6/2013</span>
-                                    <span class="title">Custom Bootstrap design for new client</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="index.html#">View all messages</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>*@
+                </div>*@
             <!-- end: Widgets Area -->
             <div style="Display:none;"><a id="widgets-area-button" class="hidden-sm hidden-xs open"><i class="fa fa-bars"></i></a>	</div>
 
@@ -477,17 +477,142 @@
             </p>
         </footer>*@
     <div class="clearfix"></div>
+
+
+    <!-- Modal -->
+    <div id="sessionExpiredModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Session Expired</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Your session has expired. Please log in again.</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="btnSessionExpiredOK" type="button" class="btn btn-danger">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
 
 <script type="text/javascript">
-    //var $ = jQuery;
-    //alert($('#idleSeconds').val());
-    // $(function () {
+
+        // ---- Session Handler Start Here --------------------------------------------//
+
+    (function () {
+        //var window.AppBaseUrl = '@Url.Content("~/")';
+        const baseUrl = '@Url.Content("~/")' || '/';
+        var keepAliveUrl = baseUrl + 'Home/KeepAlive';
+        var checkAliveUrl = baseUrl + 'Home/IsSessionAlive'; // this endpoint should return { alive: true/false }
+        var loginUrl = baseUrl + 'Account/Login';
+        var keepAliveIntervalMinutes = 0.5; // how often to ping (in minutes)
+        var keepAliveTimer = null;
+        //var checkAliveTimer = null;
+        var isSessionExpired = false;
+
+
+    console.log("session handler loaded");
+
+    // --- Start periodic keep-alive ---
+    function startKeepAlive() {
+        console.log("startKeepAlive");
+        stopKeepAlive();
+        keepAliveTimer = setInterval(function () {
+            extendSession();
+            checkSessionAlive();
+        }, keepAliveIntervalMinutes * 60 * 1000);
+
+        //// also periodically verify session still valid
+        //checkAliveTimer = setInterval(function () {
+        //    checkSessionAlive();
+        //}, keepAliveIntervalMinutes * 60 * 1000);
+    }
+
+    function stopKeepAlive() {
+        clearInterval(keepAliveTimer);
+      //  clearInterval(checkAliveTimer);
+    }
+
+    // --- Extend session silently ---
+    function extendSession() {
+        console.log("extendSession");
+        fetch(keepAliveUrl, { method: 'GET', cache: 'no-store' })
+            .catch(() => {
+                // network issue will be handled by next check
+                console.log("extendSession failed");
+            });
+    }
+
+    // --- Check if session still valid ---
+    function checkSessionAlive() {
+        console.log("checkSessionAlive");
+        if (isSessionExpired) return;
+
+        fetch(checkAliveUrl, { method: 'GET', cache: 'no-store' })
+            .then(response => {
+                if (!response.ok) throw new Error('Server error');
+                console.log(response);
+                return response.json();
+            })
+            .then(data => {
+                if (!data.alive) {
+                    handleSessionExpired();
+                }
+            })
+            .catch(() => {
+                // if server or network fails, assume session is gone
+                handleSessionExpired();
+            });
+    }
+
+    // --- Handle expired session ---
+    function handleSessionExpired() {
+        if (isSessionExpired) return; // prevent multiple dialogs
+        isSessionExpired = true;
+        stopKeepAlive();
+
+        // show modal
+        $("#sessionExpiredModal").modal({ backdrop: 'static', keyboard: false });
+    }
+
+    // --- Button redirect ---
+    $("#btnSessionExpiredOK").on("click", function () {
+        //window.location.href = loginUrl;
+        window.location.reload();
+    });
+
+        function activityHandler() {
+            console.log("user action trigger .... ");
+            checkSessionAlive();
+        }
+
+        // Attach events for activity detection
+        // const activityEvents = ['mousemove', 'keydown', 'click', 'scroll', 'focus', 'touchstart'];
+        const activityEvents = [ 'keydown', 'click', 'scroll', 'focus', 'touchstart'];
+        activityEvents.forEach(evt => document.addEventListener(evt, activityHandler));
+
+
+    // --- Start the process ---
+        startKeepAlive();
+
+})();
+
+
+// ---- Session Handler End Here --------------------------------------------//ss
+
+
+
+
+
     (function ($) {
             var timeout = $('#idleSeconds').val();
-    
+
             $(document).on("idle.idleTimer", function (event, elem, obj) {
                 $("#state").html("idle");
                 var currenturl = location.href;

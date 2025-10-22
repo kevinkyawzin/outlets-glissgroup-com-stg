@@ -16,6 +16,21 @@ namespace BigMac.Controllers
         //    return View();
         //}
 
+
+        [HttpGet]
+        public JsonResult IsSessionAlive()
+        {
+            bool alive = Session != null && Session["userid"] != null;
+            return Json(new { alive }, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpGet]
+        public ActionResult KeepAlive()
+        {
+            Session["KeepAlive"] = DateTime.Now;
+            return new HttpStatusCodeResult(200);
+        }
+
         public ActionResult Index()
         {
             callDefaultAppFields();
