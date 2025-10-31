@@ -503,7 +503,7 @@
 
 <script type="text/javascript">
 
-        // ---- Session Handler Start Here --------------------------------------------//
+    // ---- Session Handler Start Here --------------------------------------------//
 
     (function () {
         //var window.AppBaseUrl = '@Url.Content("~/")';
@@ -557,7 +557,7 @@
         fetch(checkAliveUrl, { method: 'GET', cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('Server error');
-               
+
                 return response.json();
             })
             .then(data => {
@@ -583,8 +583,9 @@
 
     // --- Button redirect ---
     $("#btnSessionExpiredOK").on("click", function () {
-        //window.location.href = loginUrl;
-        window.location.reload();
+       // window.location.href = loginUrl;
+        //window.location.reload();
+         window.location.href = '@Url.Content("~/")';
     });
 
         function activityHandler() {
@@ -604,7 +605,7 @@
 })();
 
 
-// ---- Session Handler End Here --------------------------------------------//ss
+// ---- Session Handler End Here --------------------------------------------//
 
 
 

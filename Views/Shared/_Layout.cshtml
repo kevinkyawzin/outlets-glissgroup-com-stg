@@ -50,6 +50,9 @@
     @RenderSection("JavaScript", required: false)
     @RenderSection("CSS", required: false)
 
+
+   
+
     <!-- end: Favicon and Touch Icons -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript">
@@ -808,7 +811,7 @@
 
         // ---- Session Handler Start Here --------------------------------------------//
 
-    (function () {
+       (function () {
         //var window.AppBaseUrl = '@Url.Content("~/")';
         const baseUrl = '@Url.Content("~/")' || '/';
         var keepAliveUrl = baseUrl + 'Home/KeepAlive';
@@ -860,7 +863,7 @@
         fetch(checkAliveUrl, { method: 'GET', cache: 'no-store' })
             .then(response => {
                 if (!response.ok) throw new Error('Server error');
-         
+
                 return response.json();
             })
             .then(data => {
@@ -886,8 +889,9 @@
 
     // --- Button redirect ---
     $("#btnSessionExpiredOK").on("click", function () {
-        //window.location.href = loginUrl;
-        window.location.reload();
+       // window.location.href = loginUrl;
+        //window.location.reload();
+        window.location.href = '@Url.Content("~/")';
     });
 
         function activityHandler() {
